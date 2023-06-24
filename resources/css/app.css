@@ -1,0 +1,11 @@
+#app {
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    flex: 1;
+}
+form {
+    width: 100%;
+    width: 500px;
+}

@@ -1,0 +1,32 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "lint": "npm run lint-js || npm run lint-vue || npm run lint-php",
+        "lint-vue": "./node_modules/.bin/eslint --fix ./resources/js/components/**/*.vue",
+        "lint-js": "./node_modules/.bin/eslint --fix ./resources/js/**/*.js",
+        "lint-php": "./vendor/bin/pint"
+    },
+    "devDependencies": {
+        "axios": "^0.21",
+        "eslint": "^8.43.0",
+        "eslint-plugin-vue": "^9.15.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "vue": "^2.7.14",
+        "vue-loader": "^15.10.1",
+        "vue-template-compiler": "^2.7.14"
+    },
+    "dependencies": {
+        "cookie": "^0.5.0",
+        "quasar": "^1.22.10",
+        "vue-router": "^3.6.5"
+    }
+}
